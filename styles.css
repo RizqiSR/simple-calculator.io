@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(12, 66, 216);
+}
+
+h1 {
+  width: 500px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 5px;
+  color: rgb(4, 18, 56);
+  background-color: rgb(12, 66, 216);
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 12px 12px 20px rgb(10, 47, 148), -12px -12px 20px rgb(5, 70, 247);
+}
+
+.container {
+  width: 500px;
+  height: 800px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background: rgb(12, 66, 216);
+  box-shadow: 12px 12px 20px rgb(4, 45, 160), -12px -12px 18px rgb(9, 74, 250);
+  margin: auto;
+  justify-content: space-around;
+}
+
+.calculator-grid {
+  display: grid;
+  margin-top: 96px;
+  justify-content: center;
+  grid-template-columns: repeat(4, 96px);
+  grid-template-rows: minmax(112px, auto) repeat(5, 96px);
+  gap: 15px;
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(14, 60, 187);
+  box-shadow: 7px 7px 10px rgb(10, 47, 148), -7px -7px 15px rgb(5, 70, 247);
+}
+
+.calculator-grid > button:hover {
+  cursor: pointer;
+  background-color: rgb(5, 44, 151);
+  border: none;
+  border-radius: 10px;
+}
+
+.calculator-grid > button:active {
+  position: relative;
+  background-color: rgb(14, 60, 187);
+  cursor: pointer;
+  font-size: 32px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 5px rgb(10, 47, 148), inset -3px -3px 2px rgb(13, 77, 255);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  font-weight: bold;
+  grid-column: 1 / -1;
+  background: rgb(14, 60, 187);
+  box-shadow: inset 6px 6px 6px rgb(10, 47, 148), inset -6px -6px 6px rgb(13, 74, 241);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 12px;
+  margin-top: 45px;
+  height: 160px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  font-size: 30px;
+}
+
+.output .current-operand {
+  font-size: 50px;
+}
