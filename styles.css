@@ -13,7 +13,7 @@ h1 {
   font-weight: bold;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 5px;
-  color: rgb(4, 18, 56);
+  color: rgb(198, 202, 211);
   background-color: rgb(12, 66, 216);
   margin: 40px auto;
   padding: 20px;
@@ -47,6 +47,7 @@ h1 {
   font-size: 35px;
   font-weight: bold;
   border: none;
+  color: rgb(198, 202, 211);
   border-radius: 10px;
   background-color: rgb(14, 60, 187);
   box-shadow: 7px 7px 10px rgb(10, 47, 148), -7px -7px 15px rgb(5, 70, 247);
@@ -87,6 +88,7 @@ h1 {
   height: 160px;
   word-wrap: break-word;
   word-break: break-all;
+  color: rgb(198, 202, 211);
 }
 
 .output .previous-operand {
