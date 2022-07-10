@@ -55,7 +55,7 @@ h1 {
 
 .calculator-grid > button:hover {
   cursor: pointer;
-  background-color: rgb(5, 44, 151);
+  background-color: rgb(9, 51, 169);
   border: none;
   border-radius: 10px;
 }
